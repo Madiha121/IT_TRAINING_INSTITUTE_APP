@@ -1,0 +1,56 @@
+.faculty .items {
+    transition: 0.5s;
+  }
+  .faculty .img {
+    position: relative;
+  }
+  .faculty img {
+    width: 100%;
+    height: 100%;
+  }
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    z-index: 11;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .overlay i {
+    background-color: #000;
+    color: #fff;
+    margin: 5px;
+    transition: 0.5s;
+  }
+  .faculty .details {
+    padding: 30px;
+    text-align: center;
+  }
+  .faculty .details h2 {
+    font-weight: 500;
+    font-size: 20px;
+    transition: 0.5s;
+  }
+  .faculty .details p {
+    font-size: 15px;
+    color: grey;
+    margin-top: 10px;
+    transition: 0.5s;
+  }
+  .faculty .items:hover {
+    background-color: #1eb2a6;
+    color: #fff;
+    cursor: pointer;
+  }
+  .faculty .items:hover p {
+    color: #fff;
+  }
+  .faculty .items:hover .overlay {
+    opacity: 1;
+  }
+  .faculty .items:hover .overlay i:hover {
+    background-color: #1eb2a6;
+    color: #fff;
+  }
